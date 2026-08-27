@@ -1,0 +1,2720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <Workspace version="20.0"  modDate="Fri Apr 18 12:32:23 EDT 2025"  flowJoVersion="10.0.7r2"  drawRowBorders="1"  drawColumnBorders="1"  curGroup="17042025"  groupPaneHeight="-1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:gating="http://www.isac-net.org/std/Gating-ML/v2.0/gating"  xmlns:transforms="http://www.isac-net.org/std/Gating-ML/v2.0/transformations"  xmlns:data-type="http://www.isac-net.org/std/Gating-ML/v2.0/datatypes"  xsi:schemaLocation="http://www.isac-net.org/std/Gating-ML/v2.0/gating http://www.isac-net.org/std/Gating-ML/v2.0/gating/Gating-ML.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/transformations http://www.isac-net.org/std/Gating-ML/v2.0/gating/Transformations.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/datatypes http://www.isac-net.org/std/Gating-ML/v2.0/gating/DataTypes.v2.0.xsd "  nonAutoSaveFileName="file:/D:/OneDrive%20-%20Temple%20University/Minflux%20Cargo/CytoTrack%20Rad/Flow%20Cytometry%20Result/Week%204_14_2025/Raw%20data/20250418.wsp" >
+   <WindowPosition x="142"  y="239"  width="1614"  height="1493"  displayed="1"  panelState="" />
+   <TextTraits font="SansSerif"  size="12"  name=""  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+   <Columns>
+     <TColumn width="636" >
+       <Property key="fj.appnode.prop.name" />
+     </TColumn>
+     <TColumn width="476" >
+       <Property key="fj.appnode.prop.statistic" />
+     </TColumn>
+     <TColumn width="476" >
+       <Property key="fj.appnode.prop.ncells" />
+     </TColumn>
+   </Columns>
+   <Matrices/>
+   <Cytometers>
+     <Cytometer name="DIVA"  cyt="A5.2 (LSRFortessa)"  useFCS3="1"  extraNegs="0"  widthBasis="-100"  linMin="0"  logMin="3"  linMax="262144"  logMax="262144"  linearRescale="1"  logRescale="1"  linFromKW="1"  logFromKW="1"  useGain="1"  useTransform="1"  transformType="BIEX"  manufacturer=""  serialnumber=""  homepage="workspaces-and-samples/flowjo-and-your-cytometer/ws-cytometer-bd/"  icon="bd.PNG" >
+       <LinParams>
+         <Param>time</Param>
+       </LinParams>
+       <LogParams/>
+       <FilterParams>
+         <Param>ratio</Param>
+       </FilterParams>
+       <TransformStore>
+         <Transforms>
+           <Transforms>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="BB515-A" />
+             </transforms:biex>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="FSC-H" />
+             </transforms:linear>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="512"  gain="1" >
+               <data-type:parameter data-type:name="Time" />
+             </transforms:linear>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="SSC-W" />
+             </transforms:linear>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="SSC-H" />
+             </transforms:linear>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="FSC-W" />
+             </transforms:linear>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="SSC-A" />
+             </transforms:linear>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="FSC-A" />
+             </transforms:linear>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="APC-A" />
+             </transforms:biex>
+           </Transforms>
+         </Transforms>
+       </TransformStore>
+     </Cytometer>
+   </Cytometers>
+   <Groups>
+     <GroupNode name="All Samples"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Group name="All Samples"  live="1"  role="ws.group.dlog.test"  key=""  synchronized="0"  foreground="#000000"  fontStyle="bold" >
+         <Criteria/>
+         <SampleRefs>
+           <SampleRef sampleID="1" />
+           <SampleRef sampleID="2" />
+           <SampleRef sampleID="3" />
+           <SampleRef sampleID="6" />
+           <SampleRef sampleID="4" />
+           <SampleRef sampleID="5" />
+         </SampleRefs>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+     <GroupNode name="14042025"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Subpopulations>
+         <Population name="Live Cell"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="23097" >
+           <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+             <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+             <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+             <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+             <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+               <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <WindowPosition x="2429"  y="126"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+             </GraphEnvironment>
+           </Graph>
+           <Gate gating:id="ID1781515357" >
+             <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+               <gating:dimension>
+                 <data-type:fcs-dimension data-type:name="FSC-A" />
+               </gating:dimension>
+               <gating:dimension>
+                 <data-type:fcs-dimension data-type:name="SSC-A" />
+               </gating:dimension>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="16971.7025371829" />
+                 <gating:coordinate data-type:value="86804.2867924528" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="17430.39720035" />
+                 <gating:coordinate data-type:value="15827.5622641509" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="63758.5581802275" />
+                 <gating:coordinate data-type:value="23246.7320754717" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="102976.9518810149" />
+                 <gating:coordinate data-type:value="79137.8113207547" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="88528.0699912511" />
+                 <gating:coordinate data-type:value="138491.1698113208" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="35548.8363954506" />
+                 <gating:coordinate data-type:value="122663.6075471698" />
+               </gating:vertex>
+             </gating:PolygonGate>
+           </Gate>
+           <Subpopulations>
+             <Population name="Single Cells"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="22661" >
+               <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+                 <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+                 <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+                 <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                 <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                   <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+                 </GraphEnvironment>
+               </Graph>
+               <Gate gating:id="ID377074129"  gating:parent_id="ID1781515357" >
+                 <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                   <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-A" />
+                   </gating:dimension>
+                   <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-H" />
+                   </gating:dimension>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="15136.9238845144" />
+                    <gating:coordinate data-type:value="19042.5358490566" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="17430.39720035" />
+                    <gating:coordinate data-type:value="4204.1962264151" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="52979.2335958005" />
+                    <gating:coordinate data-type:value="21268.2867924528" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="102518.2572178478" />
+                    <gating:coordinate data-type:value="46740.7698113208" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="106417.1618547682" />
+                    <gating:coordinate data-type:value="57869.5245283019" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="86693.2913385827" />
+                    <gating:coordinate data-type:value="56138.3849056604" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="36695.5730533683" />
+                    <gating:coordinate data-type:value="34622.7924528302" />
+                   </gating:vertex>
+                 </gating:PolygonGate>
+               </Gate>
+               <Subpopulations>
+                 <Population name="Transfected Cell"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="35824" >
+                   <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1"  rowCount="0" >
+                    <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                    <Axis dimension="y"  name=""  label=""  auto="auto" />
+                    <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                    <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="0"  panelState="---" />
+                    </GraphEnvironment>
+                   </Graph>
+                   <Gate gating:id="ID1372025982"  gating:parent_id="ID377074129" >
+                    <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1" >
+                    <gating:dimension gating:min="503.63781079352646"  gating:max="253024.64404229433"  yRatio="0.8933962264150943" >
+                    <data-type:fcs-dimension data-type:name="BB515-A" />
+                    </gating:dimension>
+                    </gating:RectangleGate>
+                   </Gate>
+                 </Population>
+               </Subpopulations>
+             </Population>
+           </Subpopulations>
+         </Population>
+       </Subpopulations>
+       <Group name="14042025"  live="0"  role="ws.group.dlog.test"  key=""  synchronized="0"  foreground="#909000"  fontStyle="bold" >
+         <Criteria/>
+         <SampleRefs>
+           <SampleRef sampleID="3" />
+           <SampleRef sampleID="4" />
+           <SampleRef sampleID="5" />
+         </SampleRefs>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+     <GroupNode name="15042025"  annotation=""  owningGroup="15042025"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Subpopulations>
+         <Population name="Live Cell"  annotation=""  owningGroup="15042025"  expanded="1"  sortPriority="10"  count="23334" >
+           <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+             <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+             <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+             <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+             <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+               <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <WindowPosition x="2429"  y="126"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+             </GraphEnvironment>
+           </Graph>
+           <Gate gating:id="ID265899616" >
+             <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+               <gating:dimension>
+                 <data-type:fcs-dimension data-type:name="FSC-A" />
+               </gating:dimension>
+               <gating:dimension>
+                 <data-type:fcs-dimension data-type:name="SSC-A" />
+               </gating:dimension>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="16971.7025371829" />
+                 <gating:coordinate data-type:value="86804.2867924528" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="17430.39720035" />
+                 <gating:coordinate data-type:value="15827.5622641509" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="63758.5581802275" />
+                 <gating:coordinate data-type:value="23246.7320754717" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="102976.9518810149" />
+                 <gating:coordinate data-type:value="79137.8113207547" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="88528.0699912511" />
+                 <gating:coordinate data-type:value="138491.1698113208" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="35548.8363954506" />
+                 <gating:coordinate data-type:value="122663.6075471698" />
+               </gating:vertex>
+             </gating:PolygonGate>
+           </Gate>
+           <Subpopulations>
+             <Population name="Single Cells"  annotation=""  owningGroup="15042025"  expanded="1"  sortPriority="10"  count="22661" >
+               <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+                 <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+                 <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+                 <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                 <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                   <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+                 </GraphEnvironment>
+               </Graph>
+               <Gate gating:id="ID1464264652"  gating:parent_id="ID265899616" >
+                 <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                   <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-A" />
+                   </gating:dimension>
+                   <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-H" />
+                   </gating:dimension>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="15136.9238845144" />
+                    <gating:coordinate data-type:value="19042.5358490566" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="17430.39720035" />
+                    <gating:coordinate data-type:value="4204.1962264151" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="52979.2335958005" />
+                    <gating:coordinate data-type:value="21268.2867924528" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="102518.2572178478" />
+                    <gating:coordinate data-type:value="46740.7698113208" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="106417.1618547682" />
+                    <gating:coordinate data-type:value="57869.5245283019" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="86693.2913385827" />
+                    <gating:coordinate data-type:value="56138.3849056604" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="36695.5730533683" />
+                    <gating:coordinate data-type:value="34622.7924528302" />
+                   </gating:vertex>
+                 </gating:PolygonGate>
+               </Gate>
+               <Subpopulations>
+                 <Population name="Transfected Cell"  annotation=""  owningGroup="15042025"  expanded="1"  sortPriority="10"  count="35824" >
+                   <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1"  rowCount="0" >
+                    <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                    <Axis dimension="y"  name=""  label=""  auto="auto" />
+                    <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                    <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="0"  panelState="---" />
+                    </GraphEnvironment>
+                   </Graph>
+                   <Gate gating:id="ID1907116795"  gating:parent_id="ID1464264652" >
+                    <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1" >
+                    <gating:dimension gating:min="503.63781079352646"  gating:max="253024.64404229433"  yRatio="0.8933962264150943" >
+                    <data-type:fcs-dimension data-type:name="BB515-A" />
+                    </gating:dimension>
+                    </gating:RectangleGate>
+                   </Gate>
+                 </Population>
+               </Subpopulations>
+             </Population>
+           </Subpopulations>
+         </Population>
+       </Subpopulations>
+       <Group name="15042025"  live="0"  role="ws.group.dlog.test"  key=""  synchronized="0"  foreground="#d00000"  fontStyle="bold" >
+         <Criteria/>
+         <SampleRefs>
+           <SampleRef sampleID="6" />
+         </SampleRefs>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+     <GroupNode name="16042025"  annotation=""  owningGroup="16042025"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Subpopulations>
+         <Population name="Live Cell"  annotation=""  owningGroup="16042025"  expanded="1"  sortPriority="10"  count="45312" >
+           <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+             <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+             <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+             <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+             <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+               <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <WindowPosition x="2429"  y="126"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+             </GraphEnvironment>
+           </Graph>
+           <Gate gating:id="ID776539652" >
+             <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+               <gating:dimension>
+                 <data-type:fcs-dimension data-type:name="FSC-A" />
+               </gating:dimension>
+               <gating:dimension>
+                 <data-type:fcs-dimension data-type:name="SSC-A" />
+               </gating:dimension>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="16971.7025371829" />
+                 <gating:coordinate data-type:value="86804.2867924528" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="17430.39720035" />
+                 <gating:coordinate data-type:value="15827.5622641509" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="63758.5581802275" />
+                 <gating:coordinate data-type:value="23246.7320754717" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="102976.9518810149" />
+                 <gating:coordinate data-type:value="79137.8113207547" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="88528.0699912511" />
+                 <gating:coordinate data-type:value="138491.1698113208" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="35548.8363954506" />
+                 <gating:coordinate data-type:value="122663.6075471698" />
+               </gating:vertex>
+             </gating:PolygonGate>
+           </Gate>
+           <Subpopulations>
+             <Population name="Single Cells"  annotation=""  owningGroup="16042025"  expanded="1"  sortPriority="10"  count="45107" >
+               <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+                 <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+                 <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+                 <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                 <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                   <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+                 </GraphEnvironment>
+               </Graph>
+               <Gate gating:id="ID902431179"  gating:parent_id="ID776539652" >
+                 <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                   <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-A" />
+                   </gating:dimension>
+                   <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-H" />
+                   </gating:dimension>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="15136.9238845144" />
+                    <gating:coordinate data-type:value="19042.5358490566" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="17430.39720035" />
+                    <gating:coordinate data-type:value="4204.1962264151" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="52979.2335958005" />
+                    <gating:coordinate data-type:value="21268.2867924528" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="102518.2572178478" />
+                    <gating:coordinate data-type:value="46740.7698113208" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="106417.1618547682" />
+                    <gating:coordinate data-type:value="57869.5245283019" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="86693.2913385827" />
+                    <gating:coordinate data-type:value="56138.3849056604" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="36695.5730533683" />
+                    <gating:coordinate data-type:value="34622.7924528302" />
+                   </gating:vertex>
+                 </gating:PolygonGate>
+               </Gate>
+               <Subpopulations>
+                 <Population name="Transfected Cell"  annotation=""  owningGroup="16042025"  expanded="1"  sortPriority="10"  count="19524" >
+                   <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1"  rowCount="0" >
+                    <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                    <Axis dimension="y"  name=""  label=""  auto="auto" />
+                    <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                    <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="0"  panelState="---" />
+                    </GraphEnvironment>
+                   </Graph>
+                   <Gate gating:id="ID891825138"  gating:parent_id="ID902431179" >
+                    <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1" >
+                    <gating:dimension gating:min="503.63781079352646"  gating:max="253024.64404229433"  yRatio="0.8933962264150943" >
+                    <data-type:fcs-dimension data-type:name="BB515-A" />
+                    </gating:dimension>
+                    </gating:RectangleGate>
+                   </Gate>
+                 </Population>
+               </Subpopulations>
+             </Population>
+           </Subpopulations>
+         </Population>
+       </Subpopulations>
+       <Group name="16042025"  live="0"  role="ws.group.dlog.test"  key=""  synchronized="0"  foreground="#0000d0"  fontStyle="bold" >
+         <Criteria/>
+         <SampleRefs>
+           <SampleRef sampleID="1" />
+         </SampleRefs>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+     <GroupNode name="17042025"  annotation=""  owningGroup="17042025"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Subpopulations>
+         <Population name="Live Cell"  annotation=""  owningGroup="17042025"  expanded="1"  sortPriority="10"  count="43209" >
+           <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+             <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+             <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+             <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+             <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+               <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <WindowPosition x="2429"  y="126"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+             </GraphEnvironment>
+           </Graph>
+           <Gate gating:id="ID1630559579" >
+             <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+               <gating:dimension>
+                 <data-type:fcs-dimension data-type:name="FSC-A" />
+               </gating:dimension>
+               <gating:dimension>
+                 <data-type:fcs-dimension data-type:name="SSC-A" />
+               </gating:dimension>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="16971.7025371829" />
+                 <gating:coordinate data-type:value="86804.2867924528" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="17430.39720035" />
+                 <gating:coordinate data-type:value="15827.5622641509" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="63758.5581802275" />
+                 <gating:coordinate data-type:value="23246.7320754717" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="102976.9518810149" />
+                 <gating:coordinate data-type:value="79137.8113207547" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="88528.0699912511" />
+                 <gating:coordinate data-type:value="138491.1698113208" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="35548.8363954506" />
+                 <gating:coordinate data-type:value="122663.6075471698" />
+               </gating:vertex>
+             </gating:PolygonGate>
+           </Gate>
+           <Subpopulations>
+             <Population name="Single Cells"  annotation=""  owningGroup="17042025"  expanded="1"  sortPriority="10"  count="45107" >
+               <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+                 <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+                 <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+                 <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                 <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                   <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+                 </GraphEnvironment>
+               </Graph>
+               <Gate gating:id="ID882436340"  gating:parent_id="ID1630559579" >
+                 <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                   <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-A" />
+                   </gating:dimension>
+                   <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-H" />
+                   </gating:dimension>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="15136.9238845144" />
+                    <gating:coordinate data-type:value="19042.5358490566" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="17430.39720035" />
+                    <gating:coordinate data-type:value="4204.1962264151" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="52979.2335958005" />
+                    <gating:coordinate data-type:value="21268.2867924528" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="102518.2572178478" />
+                    <gating:coordinate data-type:value="46740.7698113208" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="106417.1618547682" />
+                    <gating:coordinate data-type:value="57869.5245283019" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="86693.2913385827" />
+                    <gating:coordinate data-type:value="56138.3849056604" />
+                   </gating:vertex>
+                   <gating:vertex>
+                    <gating:coordinate data-type:value="36695.5730533683" />
+                    <gating:coordinate data-type:value="34622.7924528302" />
+                   </gating:vertex>
+                 </gating:PolygonGate>
+               </Gate>
+               <Subpopulations>
+                 <Population name="Transfected Cell"  annotation=""  owningGroup="17042025"  expanded="1"  sortPriority="10"  count="35824" >
+                   <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1"  rowCount="0" >
+                    <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                    <Axis dimension="y"  name=""  label=""  auto="auto" />
+                    <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                    <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="0"  panelState="---" />
+                    </GraphEnvironment>
+                   </Graph>
+                   <Gate gating:id="ID1687762481"  gating:parent_id="ID882436340" >
+                    <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1" >
+                    <gating:dimension gating:min="503.63781079352646"  gating:max="253024.64404229433"  yRatio="0.8933962264150943" >
+                    <data-type:fcs-dimension data-type:name="BB515-A" />
+                    </gating:dimension>
+                    </gating:RectangleGate>
+                   </Gate>
+                 </Population>
+               </Subpopulations>
+             </Population>
+           </Subpopulations>
+         </Population>
+       </Subpopulations>
+       <Group name="17042025"  live="0"  role="ws.group.dlog.test"  key=""  synchronized="0"  foreground="#009090"  fontStyle="bold" >
+         <Criteria/>
+         <SampleRefs>
+           <SampleRef sampleID="2" />
+         </SampleRefs>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+     <GroupNode name="Compensation"  annotation=""  owningGroup="Compensation"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="0" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Group name="Compensation"  live="1"  role="ws.group.dlog.compensation"  key=""  synchronized="0"  foreground="#ff00ff"  fontStyle="bold" >
+         <Criteria>
+           <Criterion connector="And"  keyword="$FIL"  function="Contains"  value="comp" />
+           <Criterion connector="Or"  keyword="$FIL"  function="Contains"  value="unstained" />
+         </Criteria>
+         <SampleRefs>
+           <SampleRef sampleID="5" />
+         </SampleRefs>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+   </Groups>
+   <SampleList>
+     <Sample>
+       <DataSet uri="file:/D:/OneDrive%20-%20Temple%20University/Minflux%20Cargo/CytoTrack%20Rad/Flow%20Cytometry%20Result/Week%204_14_2025/Raw%20data/16042025/Specimen_001_Nup153.fcs"  sampleID="1" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BB515-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="512"  gain="1" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="50000"  gain="1" >
+           <data-type:parameter data-type:name="Event #" />
+         </transforms:linear>
+       </Transformations>
+       <DerivedParameters>
+         <DerivedParameter name="Event #"  type="eventNumber" >
+           <Transform>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="50000"  gain="1" >
+               <data-type:parameter data-type:name="Event #" />
+             </transforms:linear>
+           </Transform>
+         </DerivedParameter>
+       </DerivedParameters>
+       <Keywords>
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2025-03-11T13:09:43-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST BASELINE DATE"  value="2025-01-08T15:06:05-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2025-03-10T13:09:43-04:00" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2022-08-03T10:39:05-04:00" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="6B-3R-8V-8UV-5YG" />
+         <Keyword name="CST BEADS LOT ID"  value="32298" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS WITH WARNING" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="P9BS"  value="0" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9R"  value="256" />
+         <Keyword name="$P9N"  value="Time" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="P8BS"  value="59" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="$P8V"  value="290" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8N"  value="APC-A" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="P7BS"  value="33" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="$P7V"  value="454" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7N"  value="BB515-A" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="$P6V"  value="268" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="$P5V"  value="268" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="$P4V"  value="268" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="$P3V"  value="260" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="$P2V"  value="260" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="$P1V"  value="260" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="SPILL"  value="2,BB515-A,APC-A,1,0,0,1" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="LASER5ASF"  value="0.93" />
+         <Keyword name="LASER5DELAY"  value="76.84" />
+         <Keyword name="LASER5NAME"  value="Yellow Green" />
+         <Keyword name="LASER4ASF"  value="0.86" />
+         <Keyword name="LASER4DELAY"  value="-40.62" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER3ASF"  value="1.11" />
+         <Keyword name="LASER3DELAY"  value="-79.73" />
+         <Keyword name="LASER3NAME"  value="Ultra Violet" />
+         <Keyword name="LASER2ASF"  value="0.83" />
+         <Keyword name="LASER2DELAY"  value="37.86" />
+         <Keyword name="LASER2NAME"  value="Red" />
+         <Keyword name="LASER1ASF"  value="0.74" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="FSC ASF"  value="0.67" />
+         <Keyword name="$OP"  value="BioYangLab" />
+         <Keyword name="EXPORT TIME"  value="17-APR-2025-15:26:35" />
+         <Keyword name="EXPORT USER NAME"  value="BioYangLab" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="CYTNUM"  value="R66096400183" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="$CYT"  value="A5.2 (LSRFortessa)" />
+         <Keyword name="$ETIM"  value="14:37:29" />
+         <Keyword name="$BTIM"  value="14:36:18" />
+         <Keyword name="$DATE"  value="16-APR-2025" />
+         <Keyword name="GUID"  value="a26f81c3-4e57-4e98-84e8-6a2789d32ac6" />
+         <Keyword name="EXPERIMENT NAME"  value="16042025" />
+         <Keyword name="$SRC"  value="Specimen_001" />
+         <Keyword name="TUBE NAME"  value="Nup153" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 9.1" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$PAR"  value="9" />
+         <Keyword name="$TOT"  value="0000000000000050000" />
+         <Keyword name="$SYS"  value="Windows NT (unknown) 6.2" />
+         <Keyword name="$FIL"  value="Specimen_001_Nup153.fcs" />
+         <Keyword name="$ENDDATA"  value="0000000000001802304" />
+         <Keyword name="$BEGINDATA"  value="2305" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+       </Keywords>
+       <SampleNode name="Specimen_001_Nup153.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="50000"  sampleID="1" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="50000" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="Live Cell"  annotation=""  owningGroup="16042025"  expanded="1"  sortPriority="10"  count="43209" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="50000" >
+               <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+               <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="2429"  y="126"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+               </GraphEnvironment>
+             </Graph>
+             <Gate gating:id="ID601661369" >
+               <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="FSC-A" />
+                 </gating:dimension>
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="SSC-A" />
+                 </gating:dimension>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="16971.7025371829" />
+                   <gating:coordinate data-type:value="86804.2867924528" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="17430.39720035" />
+                   <gating:coordinate data-type:value="15827.5622641509" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="63758.5581802275" />
+                   <gating:coordinate data-type:value="23246.7320754717" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="102976.9518810149" />
+                   <gating:coordinate data-type:value="79137.8113207547" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="88528.0699912511" />
+                   <gating:coordinate data-type:value="138491.1698113208" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="35548.8363954506" />
+                   <gating:coordinate data-type:value="122663.6075471698" />
+                 </gating:vertex>
+               </gating:PolygonGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="Single Cells"  annotation=""  owningGroup="16042025"  expanded="1"  sortPriority="10"  count="43074" >
+                 <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="50000" >
+                   <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+                   <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID2057181070"  gating:parent_id="ID601661369" >
+                   <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-A" />
+                    </gating:dimension>
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-H" />
+                    </gating:dimension>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="15136.9238845144" />
+                    <gating:coordinate data-type:value="19042.5358490566" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="17430.39720035" />
+                    <gating:coordinate data-type:value="4204.1962264151" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="52979.2335958005" />
+                    <gating:coordinate data-type:value="21268.2867924528" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="102518.2572178478" />
+                    <gating:coordinate data-type:value="46740.7698113208" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="106417.1618547682" />
+                    <gating:coordinate data-type:value="57869.5245283019" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="86693.2913385827" />
+                    <gating:coordinate data-type:value="56138.3849056604" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="36695.5730533683" />
+                    <gating:coordinate data-type:value="34622.7924528302" />
+                    </gating:vertex>
+                   </gating:PolygonGate>
+                 </Gate>
+                 <Subpopulations>
+                   <Population name="Transfected Cell"  annotation=""  owningGroup="16042025"  expanded="1"  sortPriority="10"  count="35824" >
+                    <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1"  rowCount="50000" >
+                    <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                    <Axis dimension="y"  name=""  label=""  auto="auto" />
+                    <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                    <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="0"  panelState="---" />
+                    </GraphEnvironment>
+                    </Graph>
+                    <Gate gating:id="ID42430058"  gating:parent_id="ID2057181070" >
+                    <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1" >
+                    <gating:dimension gating:min="503.63781079352646"  gating:max="253024.64404229433"  yRatio="0.8933962264150943" >
+                    <data-type:fcs-dimension data-type:name="BB515-A" />
+                    </gating:dimension>
+                    </gating:RectangleGate>
+                    </Gate>
+                   </Population>
+                 </Subpopulations>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/D:/OneDrive%20-%20Temple%20University/Minflux%20Cargo/CytoTrack%20Rad/Flow%20Cytometry%20Result/Week%204_14_2025/Raw%20data/14042025/Specimen_001_Unstained.fcs"  sampleID="5" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BB515-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="512"  gain="1" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="30000"  gain="1" >
+           <data-type:parameter data-type:name="Event #" />
+         </transforms:linear>
+       </Transformations>
+       <DerivedParameters>
+         <DerivedParameter name="Event #"  type="eventNumber" >
+           <Transform>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="30000"  gain="1" >
+               <data-type:parameter data-type:name="Event #" />
+             </transforms:linear>
+           </Transform>
+         </DerivedParameter>
+       </DerivedParameters>
+       <Keywords>
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2025-03-11T13:09:43-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST BASELINE DATE"  value="2025-01-08T15:06:05-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2025-03-10T13:09:43-04:00" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2022-08-03T10:39:05-04:00" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="6B-3R-8V-8UV-5YG" />
+         <Keyword name="CST BEADS LOT ID"  value="32298" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS WITH WARNING" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="P9BS"  value="0" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9R"  value="128" />
+         <Keyword name="$P9N"  value="Time" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="P8BS"  value="67" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="$P8V"  value="290" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8N"  value="APC-A" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="P7BS"  value="1" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="$P7V"  value="454" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7N"  value="BB515-A" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="$P6V"  value="268" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="$P5V"  value="268" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="$P4V"  value="268" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="$P3V"  value="260" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="$P2V"  value="260" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="$P1V"  value="260" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="SPILL"  value="2,BB515-A,APC-A,1,0,0,1" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="LASER5ASF"  value="0.81" />
+         <Keyword name="LASER5DELAY"  value="77.40" />
+         <Keyword name="LASER5NAME"  value="Yellow Green" />
+         <Keyword name="LASER4ASF"  value="0.75" />
+         <Keyword name="LASER4DELAY"  value="-41.86" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER3ASF"  value="0.88" />
+         <Keyword name="LASER3DELAY"  value="-80.86" />
+         <Keyword name="LASER3NAME"  value="Ultra Violet" />
+         <Keyword name="LASER2ASF"  value="0.69" />
+         <Keyword name="LASER2DELAY"  value="37.21" />
+         <Keyword name="LASER2NAME"  value="Red" />
+         <Keyword name="LASER1ASF"  value="0.80" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="FSC ASF"  value="0.72" />
+         <Keyword name="$OP"  value="BioYangLab" />
+         <Keyword name="EXPORT TIME"  value="18-APR-2025-12:14:42" />
+         <Keyword name="EXPORT USER NAME"  value="BioYangLab" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="CYTNUM"  value="R66096400183" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="$CYT"  value="A5.2 (LSRFortessa)" />
+         <Keyword name="$ETIM"  value="14:07:28" />
+         <Keyword name="$BTIM"  value="14:05:22" />
+         <Keyword name="$DATE"  value="14-APR-2025" />
+         <Keyword name="GUID"  value="e95f7cf2-6588-4adf-bd0b-0a0378ad42d0" />
+         <Keyword name="EXPERIMENT NAME"  value="14042025" />
+         <Keyword name="$SRC"  value="Specimen_001" />
+         <Keyword name="TUBE NAME"  value="Unstained" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 9.1" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$PAR"  value="9" />
+         <Keyword name="$TOT"  value="0000000000000030000" />
+         <Keyword name="$SYS"  value="Windows NT (unknown) 6.2" />
+         <Keyword name="$FIL"  value="Specimen_001_Unstained.fcs" />
+         <Keyword name="$ENDDATA"  value="0000000000001082309" />
+         <Keyword name="$BEGINDATA"  value="2310" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+       </Keywords>
+       <SampleNode name="Specimen_001_Unstained.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="30000"  sampleID="5" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="30000" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="Live Cell"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="25522" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="30000" >
+               <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+               <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="2429"  y="126"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+               </GraphEnvironment>
+             </Graph>
+             <Gate gating:id="ID1599575229" >
+               <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="FSC-A" />
+                 </gating:dimension>
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="SSC-A" />
+                 </gating:dimension>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="16971.7025371829" />
+                   <gating:coordinate data-type:value="86804.2867924528" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="17430.39720035" />
+                   <gating:coordinate data-type:value="15827.5622641509" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="63758.5581802275" />
+                   <gating:coordinate data-type:value="23246.7320754717" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="102976.9518810149" />
+                   <gating:coordinate data-type:value="79137.8113207547" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="88528.0699912511" />
+                   <gating:coordinate data-type:value="138491.1698113208" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="35548.8363954506" />
+                   <gating:coordinate data-type:value="122663.6075471698" />
+                 </gating:vertex>
+               </gating:PolygonGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="Single Cells"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="25391" >
+                 <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1"  rowCount="30000" >
+                   <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                   <Axis dimension="y"  name=""  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="APC-A" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="0"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID336293446"  gating:parent_id="ID1599575229" >
+                   <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-A" />
+                    </gating:dimension>
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-H" />
+                    </gating:dimension>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="15136.9238845144" />
+                    <gating:coordinate data-type:value="19042.5358490566" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="17430.39720035" />
+                    <gating:coordinate data-type:value="4204.1962264151" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="52979.2335958005" />
+                    <gating:coordinate data-type:value="21268.2867924528" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="102518.2572178478" />
+                    <gating:coordinate data-type:value="46740.7698113208" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="106417.1618547682" />
+                    <gating:coordinate data-type:value="57869.5245283019" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="86693.2913385827" />
+                    <gating:coordinate data-type:value="56138.3849056604" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="36695.5730533683" />
+                    <gating:coordinate data-type:value="34622.7924528302" />
+                    </gating:vertex>
+                   </gating:PolygonGate>
+                 </Gate>
+                 <Subpopulations>
+                   <Population name="Transfected Cell"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="175" >
+                    <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1"  rowCount="30000" >
+                    <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                    <Axis dimension="y"  name=""  label=""  auto="auto" />
+                    <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                    <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="0"  panelState="---" />
+                    </GraphEnvironment>
+                    </Graph>
+                    <Gate gating:id="ID1225098942"  gating:parent_id="ID336293446" >
+                    <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1" >
+                    <gating:dimension gating:min="503.63781079352646"  gating:max="253024.64404229433"  yRatio="0.8933962264150943" >
+                    <data-type:fcs-dimension data-type:name="BB515-A" />
+                    </gating:dimension>
+                    </gating:RectangleGate>
+                    </Gate>
+                   </Population>
+                 </Subpopulations>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/D:/OneDrive%20-%20Temple%20University/Minflux%20Cargo/CytoTrack%20Rad/Flow%20Cytometry%20Result/Week%204_14_2025/Raw%20data/15042025/Specimen_001_Nup153.fcs"  sampleID="6" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BB515-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="512"  gain="1" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="50000"  gain="1" >
+           <data-type:parameter data-type:name="Event #" />
+         </transforms:linear>
+       </Transformations>
+       <DerivedParameters>
+         <DerivedParameter name="Event #"  type="eventNumber" >
+           <Transform>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="50000"  gain="1" >
+               <data-type:parameter data-type:name="Event #" />
+             </transforms:linear>
+           </Transform>
+         </DerivedParameter>
+       </DerivedParameters>
+       <Keywords>
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2025-03-11T13:09:43-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST BASELINE DATE"  value="2025-01-08T15:06:05-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2025-03-10T13:09:43-04:00" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2022-08-03T10:39:05-04:00" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="6B-3R-8V-8UV-5YG" />
+         <Keyword name="CST BEADS LOT ID"  value="32298" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS WITH WARNING" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="P9BS"  value="0" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9R"  value="256" />
+         <Keyword name="$P9N"  value="Time" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="P8BS"  value="0" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="$P8V"  value="290" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8N"  value="APC-A" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="P7BS"  value="20" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="$P7V"  value="454" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7N"  value="BB515-A" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="$P6V"  value="268" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="$P5V"  value="268" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="$P4V"  value="268" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="$P3V"  value="260" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="$P2V"  value="260" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="$P1V"  value="260" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="SPILL"  value="2,BB515-A,APC-A,1,0,0,1" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="LASER5ASF"  value="0.81" />
+         <Keyword name="LASER5DELAY"  value="77.05" />
+         <Keyword name="LASER5NAME"  value="Yellow Green" />
+         <Keyword name="LASER4ASF"  value="0.81" />
+         <Keyword name="LASER4DELAY"  value="-40.71" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER3ASF"  value="1.08" />
+         <Keyword name="LASER3DELAY"  value="-79.32" />
+         <Keyword name="LASER3NAME"  value="Ultra Violet" />
+         <Keyword name="LASER2ASF"  value="0.76" />
+         <Keyword name="LASER2DELAY"  value="37.33" />
+         <Keyword name="LASER2NAME"  value="Red" />
+         <Keyword name="LASER1ASF"  value="0.79" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="FSC ASF"  value="0.71" />
+         <Keyword name="$OP"  value="BioYangLab" />
+         <Keyword name="EXPORT TIME"  value="17-APR-2025-15:25:53" />
+         <Keyword name="EXPORT USER NAME"  value="BioYangLab" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="CYTNUM"  value="R66096400183" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="$CYT"  value="A5.2 (LSRFortessa)" />
+         <Keyword name="$ETIM"  value="14:14:28" />
+         <Keyword name="$BTIM"  value="14:13:18" />
+         <Keyword name="$DATE"  value="15-APR-2025" />
+         <Keyword name="GUID"  value="a54a03f8-40b0-4d16-b318-becd0c30c2ec" />
+         <Keyword name="EXPERIMENT NAME"  value="15042025" />
+         <Keyword name="$SRC"  value="Specimen_001" />
+         <Keyword name="TUBE NAME"  value="Nup153" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 9.1" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$PAR"  value="9" />
+         <Keyword name="$TOT"  value="0000000000000050000" />
+         <Keyword name="$SYS"  value="Windows NT (unknown) 6.2" />
+         <Keyword name="$FIL"  value="Specimen_001_Nup153.fcs" />
+         <Keyword name="$ENDDATA"  value="0000000000001802303" />
+         <Keyword name="$BEGINDATA"  value="2304" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+       </Keywords>
+       <SampleNode name="Specimen_001_Nup153.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="50000"  sampleID="6" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="50000" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="Live Cell"  annotation=""  owningGroup="15042025"  expanded="1"  sortPriority="10"  count="45312" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="50000" >
+               <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+               <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="2429"  y="126"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+               </GraphEnvironment>
+             </Graph>
+             <Gate gating:id="ID362065783" >
+               <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="FSC-A" />
+                 </gating:dimension>
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="SSC-A" />
+                 </gating:dimension>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="16971.7025371829" />
+                   <gating:coordinate data-type:value="86804.2867924528" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="17430.39720035" />
+                   <gating:coordinate data-type:value="15827.5622641509" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="63758.5581802275" />
+                   <gating:coordinate data-type:value="23246.7320754717" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="102976.9518810149" />
+                   <gating:coordinate data-type:value="79137.8113207547" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="88528.0699912511" />
+                   <gating:coordinate data-type:value="138491.1698113208" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="35548.8363954506" />
+                   <gating:coordinate data-type:value="122663.6075471698" />
+                 </gating:vertex>
+               </gating:PolygonGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="Single Cells"  annotation=""  owningGroup="15042025"  expanded="1"  sortPriority="10"  count="45107" >
+                 <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="50000" >
+                   <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+                   <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID863444957"  gating:parent_id="ID362065783" >
+                   <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-A" />
+                    </gating:dimension>
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-H" />
+                    </gating:dimension>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="15136.9238845144" />
+                    <gating:coordinate data-type:value="19042.5358490566" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="17430.39720035" />
+                    <gating:coordinate data-type:value="4204.1962264151" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="52979.2335958005" />
+                    <gating:coordinate data-type:value="21268.2867924528" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="102518.2572178478" />
+                    <gating:coordinate data-type:value="46740.7698113208" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="106417.1618547682" />
+                    <gating:coordinate data-type:value="57869.5245283019" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="86693.2913385827" />
+                    <gating:coordinate data-type:value="56138.3849056604" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="36695.5730533683" />
+                    <gating:coordinate data-type:value="34622.7924528302" />
+                    </gating:vertex>
+                   </gating:PolygonGate>
+                 </Gate>
+                 <Subpopulations>
+                   <Population name="Transfected Cell"  annotation=""  owningGroup="15042025"  expanded="1"  sortPriority="10"  count="27891" >
+                    <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1"  rowCount="50000" >
+                    <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                    <Axis dimension="y"  name=""  label=""  auto="auto" />
+                    <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                    <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="0"  panelState="---" />
+                    </GraphEnvironment>
+                    </Graph>
+                    <Gate gating:id="ID44054531"  gating:parent_id="ID863444957" >
+                    <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1" >
+                    <gating:dimension gating:min="503.63781079352646"  gating:max="253024.64404229433"  yRatio="0.8933962264150943" >
+                    <data-type:fcs-dimension data-type:name="BB515-A" />
+                    </gating:dimension>
+                    </gating:RectangleGate>
+                    </Gate>
+                   </Population>
+                 </Subpopulations>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/D:/OneDrive%20-%20Temple%20University/Minflux%20Cargo/CytoTrack%20Rad/Flow%20Cytometry%20Result/Week%204_14_2025/Raw%20data/14042025/Specimen_001_Nup153.fcs"  sampleID="3" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BB515-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="512"  gain="1" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="27807"  gain="1" >
+           <data-type:parameter data-type:name="Event #" />
+         </transforms:linear>
+       </Transformations>
+       <DerivedParameters>
+         <DerivedParameter name="Event #"  type="eventNumber" >
+           <Transform>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="27807"  gain="1" >
+               <data-type:parameter data-type:name="Event #" />
+             </transforms:linear>
+           </Transform>
+         </DerivedParameter>
+       </DerivedParameters>
+       <Keywords>
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2025-03-11T13:09:43-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST BASELINE DATE"  value="2025-01-08T15:06:05-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2025-03-10T13:09:43-04:00" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2022-08-03T10:39:05-04:00" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="6B-3R-8V-8UV-5YG" />
+         <Keyword name="CST BEADS LOT ID"  value="32298" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS WITH WARNING" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="P9BS"  value="0" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9R"  value="512" />
+         <Keyword name="$P9N"  value="Time" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="P8BS"  value="0" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="$P8V"  value="290" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8N"  value="APC-A" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="P7BS"  value="0" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="$P7V"  value="454" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7N"  value="BB515-A" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="$P6V"  value="268" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="$P5V"  value="268" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="$P4V"  value="268" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="$P3V"  value="260" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="$P2V"  value="260" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="$P1V"  value="260" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="SPILL"  value="2,BB515-A,APC-A,1,0,0,1" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="LASER5ASF"  value="0.81" />
+         <Keyword name="LASER5DELAY"  value="77.40" />
+         <Keyword name="LASER5NAME"  value="Yellow Green" />
+         <Keyword name="LASER4ASF"  value="0.75" />
+         <Keyword name="LASER4DELAY"  value="-41.86" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER3ASF"  value="0.88" />
+         <Keyword name="LASER3DELAY"  value="-80.86" />
+         <Keyword name="LASER3NAME"  value="Ultra Violet" />
+         <Keyword name="LASER2ASF"  value="0.69" />
+         <Keyword name="LASER2DELAY"  value="37.21" />
+         <Keyword name="LASER2NAME"  value="Red" />
+         <Keyword name="LASER1ASF"  value="0.80" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="FSC ASF"  value="0.72" />
+         <Keyword name="$OP"  value="BioYangLab" />
+         <Keyword name="EXPORT TIME"  value="18-APR-2025-12:14:42" />
+         <Keyword name="EXPORT USER NAME"  value="BioYangLab" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="CYTNUM"  value="R66096400183" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="$CYT"  value="A5.2 (LSRFortessa)" />
+         <Keyword name="$ETIM"  value="14:19:45" />
+         <Keyword name="$BTIM"  value="14:14:23" />
+         <Keyword name="$DATE"  value="14-APR-2025" />
+         <Keyword name="GUID"  value="57947fb2-6eef-4f7d-905c-1017f980bd1e" />
+         <Keyword name="EXPERIMENT NAME"  value="14042025" />
+         <Keyword name="$SRC"  value="Specimen_001" />
+         <Keyword name="TUBE NAME"  value="Nup153" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 9.1" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$PAR"  value="9" />
+         <Keyword name="$TOT"  value="0000000000000027807" />
+         <Keyword name="$SYS"  value="Windows NT (unknown) 6.2" />
+         <Keyword name="$FIL"  value="Specimen_001_Nup153.fcs" />
+         <Keyword name="$ENDDATA"  value="0000000000001003354" />
+         <Keyword name="$BEGINDATA"  value="2303" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+       </Keywords>
+       <SampleNode name="Specimen_001_Nup153.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="27807"  sampleID="3" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="27807" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="Live Cell"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="23334" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="27807" >
+               <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+               <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="2429"  y="126"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+               </GraphEnvironment>
+             </Graph>
+             <Gate gating:id="ID1722993999" >
+               <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="FSC-A" />
+                 </gating:dimension>
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="SSC-A" />
+                 </gating:dimension>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="16971.7025371829" />
+                   <gating:coordinate data-type:value="86804.2867924528" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="17430.39720035" />
+                   <gating:coordinate data-type:value="15827.5622641509" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="63758.5581802275" />
+                   <gating:coordinate data-type:value="23246.7320754717" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="102976.9518810149" />
+                   <gating:coordinate data-type:value="79137.8113207547" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="88528.0699912511" />
+                   <gating:coordinate data-type:value="138491.1698113208" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="35548.8363954506" />
+                   <gating:coordinate data-type:value="122663.6075471698" />
+                 </gating:vertex>
+               </gating:PolygonGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="Single Cells"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="23309" >
+                 <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="27807" >
+                   <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+                   <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID2054471665"  gating:parent_id="ID1722993999" >
+                   <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-A" />
+                    </gating:dimension>
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-H" />
+                    </gating:dimension>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="15136.9238845144" />
+                    <gating:coordinate data-type:value="19042.5358490566" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="17430.39720035" />
+                    <gating:coordinate data-type:value="4204.1962264151" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="52979.2335958005" />
+                    <gating:coordinate data-type:value="21268.2867924528" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="102518.2572178478" />
+                    <gating:coordinate data-type:value="46740.7698113208" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="106417.1618547682" />
+                    <gating:coordinate data-type:value="57869.5245283019" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="86693.2913385827" />
+                    <gating:coordinate data-type:value="56138.3849056604" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="36695.5730533683" />
+                    <gating:coordinate data-type:value="34622.7924528302" />
+                    </gating:vertex>
+                   </gating:PolygonGate>
+                 </Gate>
+                 <Subpopulations>
+                   <Population name="Transfected Cell"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="630" >
+                    <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1"  rowCount="27807" >
+                    <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                    <Axis dimension="y"  name=""  label=""  auto="auto" />
+                    <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                    <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="0"  panelState="---" />
+                    </GraphEnvironment>
+                    </Graph>
+                    <Gate gating:id="ID164710758"  gating:parent_id="ID2054471665" >
+                    <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1" >
+                    <gating:dimension gating:min="503.63781079352646"  gating:max="253024.64404229433"  yRatio="0.8933962264150943" >
+                    <data-type:fcs-dimension data-type:name="BB515-A" />
+                    </gating:dimension>
+                    </gating:RectangleGate>
+                    </Gate>
+                   </Population>
+                 </Subpopulations>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/D:/OneDrive%20-%20Temple%20University/Minflux%20Cargo/CytoTrack%20Rad/Flow%20Cytometry%20Result/Week%204_14_2025/Raw%20data/14042025/Specimen_001_TransX2.fcs"  sampleID="4" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BB515-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="512"  gain="1" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="26997"  gain="1" >
+           <data-type:parameter data-type:name="Event #" />
+         </transforms:linear>
+       </Transformations>
+       <DerivedParameters>
+         <DerivedParameter name="Event #"  type="eventNumber" >
+           <Transform>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="26997"  gain="1" >
+               <data-type:parameter data-type:name="Event #" />
+             </transforms:linear>
+           </Transform>
+         </DerivedParameter>
+       </DerivedParameters>
+       <Keywords>
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2025-03-11T13:09:43-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST BASELINE DATE"  value="2025-01-08T15:06:05-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2025-03-10T13:09:43-04:00" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2022-08-03T10:39:05-04:00" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="6B-3R-8V-8UV-5YG" />
+         <Keyword name="CST BEADS LOT ID"  value="32298" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS WITH WARNING" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="P9BS"  value="0" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9R"  value="512" />
+         <Keyword name="$P9N"  value="Time" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="P8BS"  value="0" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="$P8V"  value="290" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8N"  value="APC-A" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="P7BS"  value="0" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="$P7V"  value="454" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7N"  value="BB515-A" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="$P6V"  value="268" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="$P5V"  value="268" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="$P4V"  value="268" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="$P3V"  value="260" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="$P2V"  value="260" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="$P1V"  value="260" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="SPILL"  value="2,BB515-A,APC-A,1,0,0,1" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="LASER5ASF"  value="0.81" />
+         <Keyword name="LASER5DELAY"  value="77.40" />
+         <Keyword name="LASER5NAME"  value="Yellow Green" />
+         <Keyword name="LASER4ASF"  value="0.75" />
+         <Keyword name="LASER4DELAY"  value="-41.86" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER3ASF"  value="0.88" />
+         <Keyword name="LASER3DELAY"  value="-80.86" />
+         <Keyword name="LASER3NAME"  value="Ultra Violet" />
+         <Keyword name="LASER2ASF"  value="0.69" />
+         <Keyword name="LASER2DELAY"  value="37.21" />
+         <Keyword name="LASER2NAME"  value="Red" />
+         <Keyword name="LASER1ASF"  value="0.80" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="FSC ASF"  value="0.72" />
+         <Keyword name="$OP"  value="BioYangLab" />
+         <Keyword name="EXPORT TIME"  value="18-APR-2025-12:14:42" />
+         <Keyword name="EXPORT USER NAME"  value="BioYangLab" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="CYTNUM"  value="R66096400183" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="$CYT"  value="A5.2 (LSRFortessa)" />
+         <Keyword name="$ETIM"  value="14:14:03" />
+         <Keyword name="$BTIM"  value="14:08:18" />
+         <Keyword name="$DATE"  value="14-APR-2025" />
+         <Keyword name="GUID"  value="2536e845-ad3a-4875-ad3d-3f83b3093ba2" />
+         <Keyword name="EXPERIMENT NAME"  value="14042025" />
+         <Keyword name="$SRC"  value="Specimen_001" />
+         <Keyword name="TUBE NAME"  value="TransX2" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 9.1" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$PAR"  value="9" />
+         <Keyword name="$TOT"  value="0000000000000026997" />
+         <Keyword name="$SYS"  value="Windows NT (unknown) 6.2" />
+         <Keyword name="$FIL"  value="Specimen_001_TransX2.fcs" />
+         <Keyword name="$ENDDATA"  value="0000000000000974196" />
+         <Keyword name="$BEGINDATA"  value="2305" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+       </Keywords>
+       <SampleNode name="Specimen_001_TransX2.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="26997"  sampleID="4" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="26997" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="Live Cell"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="22644" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="26997" >
+               <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+               <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="2429"  y="126"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+               </GraphEnvironment>
+             </Graph>
+             <Gate gating:id="ID216542921" >
+               <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="FSC-A" />
+                 </gating:dimension>
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="SSC-A" />
+                 </gating:dimension>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="16971.7025371829" />
+                   <gating:coordinate data-type:value="86804.2867924528" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="17430.39720035" />
+                   <gating:coordinate data-type:value="15827.5622641509" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="63758.5581802275" />
+                   <gating:coordinate data-type:value="23246.7320754717" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="102976.9518810149" />
+                   <gating:coordinate data-type:value="79137.8113207547" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="88528.0699912511" />
+                   <gating:coordinate data-type:value="138491.1698113208" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="35548.8363954506" />
+                   <gating:coordinate data-type:value="122663.6075471698" />
+                 </gating:vertex>
+               </gating:PolygonGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="Single Cells"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="22605" >
+                 <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="26997" >
+                   <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+                   <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID2057295799"  gating:parent_id="ID216542921" >
+                   <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-A" />
+                    </gating:dimension>
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-H" />
+                    </gating:dimension>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="15136.9238845144" />
+                    <gating:coordinate data-type:value="19042.5358490566" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="17430.39720035" />
+                    <gating:coordinate data-type:value="4204.1962264151" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="52979.2335958005" />
+                    <gating:coordinate data-type:value="21268.2867924528" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="102518.2572178478" />
+                    <gating:coordinate data-type:value="46740.7698113208" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="106417.1618547682" />
+                    <gating:coordinate data-type:value="57869.5245283019" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="86693.2913385827" />
+                    <gating:coordinate data-type:value="56138.3849056604" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="36695.5730533683" />
+                    <gating:coordinate data-type:value="34622.7924528302" />
+                    </gating:vertex>
+                   </gating:PolygonGate>
+                 </Gate>
+                 <Subpopulations>
+                   <Population name="Transfected Cell"  annotation=""  owningGroup="14042025"  expanded="1"  sortPriority="10"  count="728" >
+                    <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1"  rowCount="26997" >
+                    <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                    <Axis dimension="y"  name=""  label=""  auto="auto" />
+                    <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                    <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="0"  panelState="---" />
+                    </GraphEnvironment>
+                    </Graph>
+                    <Gate gating:id="ID1591615482"  gating:parent_id="ID2057295799" >
+                    <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1" >
+                    <gating:dimension gating:min="503.63781079352646"  gating:max="253024.64404229433"  yRatio="0.8933962264150943" >
+                    <data-type:fcs-dimension data-type:name="BB515-A" />
+                    </gating:dimension>
+                    </gating:RectangleGate>
+                    </Gate>
+                   </Population>
+                 </Subpopulations>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/D:/OneDrive%20-%20Temple%20University/Minflux%20Cargo/CytoTrack%20Rad/Flow%20Cytometry%20Result/Week%204_14_2025/Raw%20data/17042025/Specimen_001_Nup153.fcs"  sampleID="2" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BB515-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="512"  gain="1" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="50000"  gain="1" >
+           <data-type:parameter data-type:name="Event #" />
+         </transforms:linear>
+       </Transformations>
+       <DerivedParameters>
+         <DerivedParameter name="Event #"  type="eventNumber" >
+           <Transform>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="50000"  gain="1" >
+               <data-type:parameter data-type:name="Event #" />
+             </transforms:linear>
+           </Transform>
+         </DerivedParameter>
+       </DerivedParameters>
+       <Keywords>
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2025-03-11T13:09:43-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST BASELINE DATE"  value="2025-01-08T15:06:05-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2025-03-10T13:09:43-04:00" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2022-08-03T10:39:05-04:00" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="6B-3R-8V-8UV-5YG" />
+         <Keyword name="CST BEADS LOT ID"  value="32298" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS WITH WARNING" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="P9BS"  value="0" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9R"  value="512" />
+         <Keyword name="$P9N"  value="Time" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="P8BS"  value="82" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="$P8V"  value="290" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8N"  value="APC-A" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="P7BS"  value="45" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="$P7V"  value="454" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7N"  value="BB515-A" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="$P6V"  value="268" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="$P5V"  value="268" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="$P4V"  value="268" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="$P3V"  value="260" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="$P2V"  value="260" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="$P1V"  value="260" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="SPILL"  value="2,BB515-A,APC-A,1,0,0,1" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="LASER5ASF"  value="0.93" />
+         <Keyword name="LASER5DELAY"  value="76.84" />
+         <Keyword name="LASER5NAME"  value="Yellow Green" />
+         <Keyword name="LASER4ASF"  value="0.86" />
+         <Keyword name="LASER4DELAY"  value="-40.62" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER3ASF"  value="1.11" />
+         <Keyword name="LASER3DELAY"  value="-79.73" />
+         <Keyword name="LASER3NAME"  value="Ultra Violet" />
+         <Keyword name="LASER2ASF"  value="0.83" />
+         <Keyword name="LASER2DELAY"  value="37.86" />
+         <Keyword name="LASER2NAME"  value="Red" />
+         <Keyword name="LASER1ASF"  value="0.74" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="FSC ASF"  value="0.67" />
+         <Keyword name="$OP"  value="BioYangLab" />
+         <Keyword name="EXPORT TIME"  value="17-APR-2025-15:27:16" />
+         <Keyword name="EXPORT USER NAME"  value="BioYangLab" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="CYTNUM"  value="R66096400183" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="$CYT"  value="A5.2 (LSRFortessa)" />
+         <Keyword name="$ETIM"  value="14:30:34" />
+         <Keyword name="$BTIM"  value="14:28:33" />
+         <Keyword name="$DATE"  value="17-APR-2025" />
+         <Keyword name="GUID"  value="2d5635f4-e956-457b-ab79-f30fc32415b0" />
+         <Keyword name="EXPERIMENT NAME"  value="17042025" />
+         <Keyword name="$SRC"  value="Specimen_001" />
+         <Keyword name="TUBE NAME"  value="Nup153" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 9.1" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$PAR"  value="9" />
+         <Keyword name="$TOT"  value="0000000000000050000" />
+         <Keyword name="$SYS"  value="Windows NT (unknown) 6.2" />
+         <Keyword name="$FIL"  value="Specimen_001_Nup153.fcs" />
+         <Keyword name="$ENDDATA"  value="0000000000001802304" />
+         <Keyword name="$BEGINDATA"  value="2305" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+       </Keywords>
+       <SampleNode name="Specimen_001_Nup153.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="50000"  sampleID="2" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="50000" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="Live Cell"  annotation=""  owningGroup="17042025"  expanded="1"  sortPriority="10"  count="33671" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="50000" >
+               <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+               <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="2429"  y="126"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+               </GraphEnvironment>
+             </Graph>
+             <Gate gating:id="ID315889454" >
+               <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="FSC-A" />
+                 </gating:dimension>
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="SSC-A" />
+                 </gating:dimension>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="16971.7025371829" />
+                   <gating:coordinate data-type:value="86804.2867924528" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="17430.39720035" />
+                   <gating:coordinate data-type:value="15827.5622641509" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="63758.5581802275" />
+                   <gating:coordinate data-type:value="23246.7320754717" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="102976.9518810149" />
+                   <gating:coordinate data-type:value="79137.8113207547" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="88528.0699912511" />
+                   <gating:coordinate data-type:value="138491.1698113208" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="35548.8363954506" />
+                   <gating:coordinate data-type:value="122663.6075471698" />
+                 </gating:vertex>
+               </gating:PolygonGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="Single Cells"  annotation=""  owningGroup="17042025"  expanded="1"  sortPriority="10"  count="33638" >
+                 <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1"  rowCount="50000" >
+                   <Axis dimension="x"  name="BB515-A"  label=""  auto="auto" />
+                   <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="1"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID168311098"  gating:parent_id="ID315889454" >
+                   <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-A" />
+                    </gating:dimension>
+                    <gating:dimension>
+                    <data-type:fcs-dimension data-type:name="FSC-H" />
+                    </gating:dimension>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="15136.9238845144" />
+                    <gating:coordinate data-type:value="19042.5358490566" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="17430.39720035" />
+                    <gating:coordinate data-type:value="4204.1962264151" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="52979.2335958005" />
+                    <gating:coordinate data-type:value="21268.2867924528" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="102518.2572178478" />
+                    <gating:coordinate data-type:value="46740.7698113208" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="106417.1618547682" />
+                    <gating:coordinate data-type:value="57869.5245283019" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="86693.2913385827" />
+                    <gating:coordinate data-type:value="56138.3849056604" />
+                    </gating:vertex>
+                    <gating:vertex>
+                    <gating:coordinate data-type:value="36695.5730533683" />
+                    <gating:coordinate data-type:value="34622.7924528302" />
+                    </gating:vertex>
+                   </gating:PolygonGate>
+                 </Gate>
+                 <Subpopulations>
+                   <Population name="Transfected Cell"  annotation=""  owningGroup="17042025"  expanded="1"  sortPriority="10"  count="28452" >
+                    <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1"  rowCount="50000" >
+                    <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                    <Axis dimension="y"  name=""  label=""  auto="auto" />
+                    <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                    <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                    <TextTraits font="SansSerif"  size="12"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="12"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <TextTraits font="SansSerif"  size="10"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                    <WindowPosition x="1258"  y="187"  width="1301"  height="1391"  displayed="0"  panelState="---" />
+                    </GraphEnvironment>
+                    </Graph>
+                    <Gate gating:id="ID1844529926"  gating:parent_id="ID168311098" >
+                    <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1" >
+                    <gating:dimension gating:min="503.63781079352646"  gating:max="253024.64404229433"  yRatio="0.8933962264150943" >
+                    <data-type:fcs-dimension data-type:name="BB515-A" />
+                    </gating:dimension>
+                    </gating:RectangleGate>
+                    </Gate>
+                   </Population>
+                 </Subpopulations>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+   </SampleList>
+   <TableEditor title="FlowJo Tables:20250418.wsp"  current="Table" >
+     <Table name="Table"  outputFile="file:/C:/Users/wenla.DESKTOP-DN9EIB2/Table"  color="#00ffffff"  isBatch="0"  quickclose="0"  outputFormat="fj.document.type.table" >
+       <PrintLayout flipPattern0="0"  rows="1"  columns="1"  padding="36"  header=""  footer=""  headerActive="0"  footerActive="0"  scalingMode="fj.print.scale.none"  scaling="1"  orientation="1"  width="612"  height="792"  imageableX="72"  imageableY="72"  imageableWidth="468"  imageableHeight="648" />
+       <PageSection sectionName="header" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;IMG SRC=&quot;http://www.flowjo.com/home/images/logotypethin.png&quot;&gt;&lt;/IMG&gt;&lt;br/&gt;Tree Star, Inc.&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;Page &lt;PageNumber/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <PageSection sectionName="footer" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;  valign=&quot;bottom&quot;&gt;&lt;LongDate/&gt;&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;bottom&quot;&gt;&lt;Version/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <Iteration iterationType="SAMPLE"  iterationValue=""  iterationKeyword=""  discriminator=""  panelSize="1"  groupName="workspaceSelection" />
+     </Table>
+   </TableEditor>
+   <LayoutEditor title="FlowJo Layouts---20250418.wsp"  current="Layout"  showGrid="0"  showPageBreaks="0"  showGuides="0"  showDebugOutput="0" >
+     <Layout name="Layout"  outputFile="file:/C:/Users/wenla.DESKTOP-DN9EIB2/Documents/Layout"  color="#00ffffff"  isBatch="0"  showGrid="0"  showRulers="1"  showDebugOutput="0"  showGuides="0"  showPageBreaks="1"  scale="1" >
+       <PrintLayout flipPattern0="0"  rows="1"  columns="1"  padding="36"  header=""  footer=""  headerActive="0"  footerActive="0"  scalingMode="fj.print.scale.none"  scaling="1"  orientation="1"  width="612"  height="792"  imageableX="72"  imageableY="72"  imageableWidth="468"  imageableHeight="648" />
+       <PageSection sectionName="header" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;IMG SRC=&quot;http://www.flowjo.com/home/images/logotypethin.png&quot;&gt;&lt;/IMG&gt;&lt;br/&gt;Tree Star, Inc.&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;Page &lt;PageNumber/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <PageSection sectionName="footer" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;  valign=&quot;bottom&quot;&gt;&lt;LongDate/&gt;&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;bottom&quot;&gt;&lt;Version/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <Iteration iterationType="OFF"  iterationValue=""  iterationKeyword=""  discriminator=""  panelSize="1"  groupName="workspaceSelection" />
+       <BatchSettings useCurrentGroup="1"  length="3"  name=""  order="ACROSS"  direction="COLUMNS"  append="0"  destination="toLayout"  separatePages="0"  launchApp="1"  header="0"  footer="0"  commandLineBatch="0" />
+       <FigList/>
+     </Layout>
+     <WindowPosition x="0"  y="0"  width="650"  height="56"  displayed="0" />
+   </LayoutEditor>
+   <Scripts>
+     <Script lang="text/javascript"  name="New Script" />
+   </Scripts>
+   <Exports/>
+   <SOPS/>
+   <experiment/>
+ </Workspace>
